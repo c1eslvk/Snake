@@ -409,6 +409,7 @@ class SearchBasedPlayer(Player):
                         g_costs[next_pos] = g_new_cost
                         f_costs[next_pos] = f_new_cost
                         counter += 1
+                        print(g_costs)
                         heappush(pq, (f_new_cost, counter, next_pos, path + [direction]))
 
         return []
